@@ -1,0 +1,25 @@
+{
+  "name":              "timeunitjs",
+  "description":       "Port of Doug Lea's TimeUnit Java class to JavaScript.",
+  "keywords":          ["TimeUnit", "time conversion", "Doug Lea"],
+  "version":           "1.0.0",
+  "author":            "Jason Walton (https://github.com/jwalton)",
+  "contributors": [
+      "Jason Walton <dev@lucid.thedreaming.org> (https://github.com/jwalton)"
+  ],
+  "licenses": [{
+    "type":            "Public Domain",
+    "url":             "http://creativecommons.org/licenses/publicdomain"
+  }],
+  "main":              "./lib/timeunit",
+  "directories" : {
+    "lib":             "./lib"
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.3",
+    "mocha":         "1.10.0"
+  },
+  "engines": {
+    "node":            ">=0.6.19"
+  }
+}
