@@ -1,6 +1,6 @@
 {
   "name": "timeunit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Port of Doug Lea's TimeUnit Java class to JavaScript.",
   "main": "lib/timeunit.js",
   "dependencies": {},

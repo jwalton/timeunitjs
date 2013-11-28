@@ -82,11 +82,9 @@ umd this, ->
 
         # Call `done` after the specified timeout.
         sleep: (timeout, done) ->
-            if (timeout > 0)
-                ms = @toMillis timeout
-                setTimeout done, ms
-            else
-                done()
+            if (timeout < 0) then timeout = 0
+            ms = @toMillis timeout
+            setTimeout done, ms
             return null
     }
 
