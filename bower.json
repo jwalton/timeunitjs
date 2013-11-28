@@ -1,5 +1,5 @@
 {
-  "name": "timeunitjs",
+  "name": "timeunit",
   "version": "1.0.0",
   "description": "Port of Doug Lea's TimeUnit Java class to JavaScript.",
   "main": "lib/timeunit.js",

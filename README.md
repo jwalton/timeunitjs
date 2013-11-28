@@ -62,10 +62,10 @@ Compatibilty
 
 Install in node.js with:
 
-    npm install timeunitjs
+    npm install timeunit
 
 ### bower
 
 Install with:
 
-    bower install timeunitjs
+    bower install timeunit
