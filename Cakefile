@@ -31,6 +31,9 @@ mocha = (done) ->
     options.push '--recursive'
     options.push 'test'
 
+    options.push '--reporter'
+    options.push 'spec'
+
     launch './node_modules/.bin/mocha', options, done
 
 run = (fn) ->

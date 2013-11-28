@@ -37,7 +37,8 @@ execution using `setTimeout()`:
         console.log("Hello after 5 seconds!");
     });
 
-Perhaps even more useful in CoffeeScript, where it is a little easier to use that setTimeout:
+Perhaps even more useful in CoffeeScript, where it is a little easier to use that setTimeout, since
+it follows the "callback at the end" idiom used by most node.js code:
 
     timeunit.seconds.sleep 5, () ->
         console.log "Hello world"

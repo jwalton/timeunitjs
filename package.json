@@ -2,7 +2,7 @@
   "name":              "timeunit",
   "description":       "Port of Doug Lea's TimeUnit Java class to JavaScript.",
   "keywords":          ["TimeUnit", "time conversion", "Doug Lea"],
-  "version":           "1.0.1",
+  "version":           "1.1.0",
   "author":            "Jason Walton (https://github.com/jwalton)",
   "contributors": [
       "Jason Walton <dev@lucid.thedreaming.org> (https://github.com/jwalton)"

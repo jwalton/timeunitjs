@@ -80,12 +80,22 @@ umd this, ->
         # * `sourceUnit` the unit of the `sourceDuration` argument.
         convert: (sourceDuration, sourceUnit) -> sourceDuration/(C[@index]/C[sourceUnit.index])
 
-        # Call `done` after the specified timeout.
-        sleep: (timeout, done) ->
+        # Call `fn` after the specified timeout.
+        #
+        # Returns a timer ID which can be passed to `timeunit.clearTimeout()` to cancel the timer.
+        sleep: (timeout, fn) ->
             if (timeout < 0) then timeout = 0
             ms = @toMillis timeout
-            setTimeout done, ms
-            return null
+            return setTimeout fn, ms
+
+        # Call `fn` repeatedly, delaying by `interval` between each execution.
+        #
+        # Returns an intervalID which can be passed to `timeunit.clearInterval()` to stop the
+        # interval.
+        interval: (interval, fn) ->
+            if (interval < 0) then throw new Error("Invalid interval: #{interval} #{@name}")
+            ms = @toMillis interval
+            return setInterval fn, ms
     }
 
     exports.nanoseconds = object baseTimeUnit, {
@@ -122,5 +132,8 @@ umd this, ->
         index: 6
         name: "days"
     }
+
+    exports.clearTimeout = clearTimeout
+    exports.clearInterval = clearInterval
 
     return exports
