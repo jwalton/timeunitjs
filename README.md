@@ -9,6 +9,8 @@ This class is the basis for `java.util.concurrent.TimeUnit` from JavaSE.
 Ported by Jason Walton, released under the
 [public domain](http://creativecommons.org/licenses/publicdomain).
 
+[![NPM](https://nodei.co/npm/timeunit.png?downloads=true&stars=true)](https://nodei.co/npm/timeunit/)
+
 About
 =====
 
