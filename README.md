@@ -29,7 +29,7 @@ to other methods:
 
 Or can be used to perform conversions, such as converting 5 seconds into 5000 milliseconds:
 
-    timeunit.seconds.toMilliseconds(5); // Returns 5000
+    timeunit.seconds.toMillis(5); // Returns 5000
     timeunit.milliseconds.convert(5, timeunit.seconds); // Returns 5000
 
 `timeunit` also define the very handy `sleep()` function, which schedules a function for future
