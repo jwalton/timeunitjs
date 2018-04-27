@@ -20,8 +20,8 @@
     "lib":             "./lib"
   },
   "devDependencies": {
-    "coffee-script": "1.6.3",
-    "mocha":         "1.10.0"
+    "coffee-script": "1.12.7",
+    "mocha":         "5.1.1"
   },
   "scripts": {
     "prepublish": "cake build",
